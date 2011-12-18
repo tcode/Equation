@@ -72,8 +72,26 @@ def sinus(v):
         print(sin(v))
 
 
+def console():
+        arg = raw_input (">> ")
+        if arg == "sphere":
+                print("Sphere, interesting unfortunately this is not implemented yet")
+                console()
+
+        elif arg == "exit":
+                sys.exit()
+        elif arg == "help":
+                print("This is help")
+                print("Available commands are few still")
+        else:
+                print("not implemented, or bad command")
+                console()
+
+
+
 def main():
         print ("I am main")
+        console()
         for arg in sys.argv:
                 if arg == "":
                         print("empty")
