@@ -65,7 +65,7 @@ def Find(pat, text):
 
 
 def cosinus(v):
-        print( cos(v))
+        print(cos(v))
 
 
 def sinus(v):
