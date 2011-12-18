@@ -83,6 +83,7 @@ def console():
         elif arg == "help":
                 print("This is help")
                 print("Available commands are few still")
+                console()
         else:
                 print("not implemented, or bad command")
                 console()
