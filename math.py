@@ -64,10 +64,12 @@ def Find(pat, text):
 
 
 
-        
+def cosinus(v):
+        print( cos(v))
 
 
-
+def sinus(v):
+        print(sin(v))
 
 
 def main():
@@ -77,9 +79,18 @@ def main():
                         print("empty")
                 elif arg == "spherearea":
                         print("Sphere Area, calculation")
-                        a = sys.argv[2]
-                        r = int(a)
+                        a = sys.argv[2]  
+                        r = float(a)
                         sphereArea(r)
+                elif arg == "cos":
+                        print("Cosinus calculation")
+                        a = sys.argv[2]
+                        v = float(a)
+                        cosinus(v)
+                elif arg == "sin":
+                        a = sys.argv[2]
+                        v = float(a)
+                        sinus(v)
                 elif arg == "spherecircumference":
                         print("Sphere circumference, calculation")
 

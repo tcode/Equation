@@ -1,1 +1,3 @@
 "./math.py OPERATION NUMBER/NUMBERS" is the basic model for using this program 
+There is also some none mathematical functions in math.py, but nothing exceptionally
+math.py should be fairly easy to use in other programs, as it should follow principles of being unobtrusive when you import it, thats what the last if statement is meant to make sure, at least as of how far I am able to understand the python idioms
