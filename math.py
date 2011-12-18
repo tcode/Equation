@@ -89,6 +89,16 @@ def console():
                 console()
 
 
+'''
+A other nice thing to do would be to implement a regex 
+to help handling all the input in the console, and making it a nicer program to
+use.
+perhaps also implementing something to solve equations step-by-step
+
+
+'''
+
+
 
 def main():
         print ("I am main")
