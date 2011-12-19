@@ -71,6 +71,10 @@ def console():
         elif arg == "cos":
                 print ("Cosinus, not implemented")
                 console()
+        elif arg == "circle":
+                r = raw_input("What is your radius ?: ")
+
+                console()
         else:
                 print("not implemented, or bad command")
                 console()
