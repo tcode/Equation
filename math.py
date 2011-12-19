@@ -49,8 +49,10 @@ def cosinus(v):
 def sinus(v):
         print(sin(v))
 
-def tan(v):
+
+def tangent(v):
         print(tan(v))
+
 
 def console():
         arg = raw_input (">> ")
@@ -86,8 +88,6 @@ perhaps also implementing something to solve equations step-by-step
 
 '''
 
-def tangent(v):
-        print(tan(v))
 
 
 def main():
