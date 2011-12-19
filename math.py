@@ -2,6 +2,7 @@
 
 from math import *
 import sys
+import re
 
 #All Math functions in this program follows in the next section
 
@@ -48,6 +49,7 @@ def sinus(v):
 def tangent(v):
         return(tan(v))
 
+
 # That was all the math functions
 
 def console():
@@ -64,11 +66,17 @@ def console():
         elif arg == "sin":
                 v = raw_print("What value do you want to take Sinus of ?: ")
                 v = int(v)
+                print(sinus(v))
                 console()
         elif arg == "cos":
                 v = raw_input("What value do you want Cosinus of ?: ")
                 v = int(v)
                 print(cosinus(v))
+                console()
+        elif arg == "tan":
+                v = raw_input("What value do you want to take Tangent of ?: ")
+                v = int(v)
+                print(tangent(v))
                 console()
         elif arg == "circle":
                 f = raw_input("Do you want the area inside the circle or the circumference ?: ")
@@ -86,8 +94,6 @@ def console():
                 console()
 
 
-
-# Regular Expressions will not be implemented soon
 
 '''
 A other nice thing to do would be to implement a regex 
