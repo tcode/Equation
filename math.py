@@ -75,15 +75,19 @@ def sinus(v):
 def console():
         arg = raw_input (">> ")
         if arg == "sphere":
-                print("Sphere, interesting unfortunately this is not implemented yet")
+                print("Sphere, not implemented yet")
                 console()
-
         elif arg == "exit":
                 sys.exit()
         elif arg == "help":
                 print("This is help")
                 print("Available commands are few still")
                 console()
+        elif arg == "sin":
+                print("Sinus calculation, not implemented")
+                console()
+        elif arg == "cos":
+                print ("Cosinus, not implemented")
         else:
                 print("not implemented, or bad command")
                 console()
@@ -106,6 +110,7 @@ def main():
         for arg in sys.argv:
                 if arg == "":
                         print("empty")
+                        console()
                 elif arg == "spherearea":
                         print("Sphere Area, calculation")
                         a = sys.argv[2]  
