@@ -105,6 +105,10 @@ perhaps also implementing something to solve equations step-by-step
 
 
 
+def tangent(v):
+        print(tan(v))
+
+
 def main():
         print ("I am main")
         console()
@@ -126,6 +130,10 @@ def main():
                         a = sys.argv[2]
                         v = float(a)
                         sinus(v)
+                elif arg == "tan":
+                        a = sys.argv[2]
+                        v = float(a)
+                        tangent(v)
                 elif arg == "spherecircumference":
                         print("Sphere circumference, calculation")
 
