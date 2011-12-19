@@ -3,39 +3,25 @@
 from math import *
 import sys
 
-
-
 def triangleArea(a, b, c):
         d = sqrt((a+b+c)/2)
         print (d*((d-a)*(d-b)*(d-c)))
        
 
-
 def circleArea(radius):
         print (radius**2*pi)
-
-
-
 
 
 def circleCircumference(radius):
         print (radius*2*pi)
 
 
-
-
-
 def rectangleArea(side, wide):
         print (side*wide)
 
 
-
-
-
 def rectangleCircumference(side, wide):
         print((side*2) + (wide*2))
-
-
 
 
 def sphereArea(radius):
@@ -43,14 +29,9 @@ def sphereArea(radius):
         print("Your result :", area)
 
 
-
-
-
 def sphereCicumference(radius):
         area = 4*pi*radius*2
         print(area)
-
-
 
 
 def Find(pat, text):
@@ -59,8 +40,6 @@ def Find(pat, text):
                 print (match.group())
         else:
                 print ("No Match!")
-
-
 
 
 def cosinus(v):
@@ -103,8 +82,6 @@ perhaps also implementing something to solve equations step-by-step
 
 '''
 
-
-
 def tangent(v):
         print(tan(v))
 
@@ -139,13 +116,6 @@ def main():
 
 
 
-
-
-
-
-
-
-
 '''
 hello I am a comment
 In fact I am a long comment
@@ -164,14 +134,4 @@ In fact I am a long comment
 
 if __name__ == '__main__':
         main()
-
-
-
-
-
-
-
-
-
-
 
