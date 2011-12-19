@@ -70,6 +70,8 @@ def cosinus(v):
 def sinus(v):
         print(sin(v))
 
+def tan(v):
+        print(tan(v))
 
 def console():
         arg = raw_input (">> ")
