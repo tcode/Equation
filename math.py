@@ -68,6 +68,7 @@ def console():
                 console()
         elif arg == "cos":
                 print ("Cosinus, not implemented")
+                console()
         else:
                 print("not implemented, or bad command")
                 console()
