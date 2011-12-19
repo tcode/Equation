@@ -3,56 +3,52 @@
 from math import *
 import sys
 
+#All Math functions in this program follows in the next section
+
+
 def triangleArea(a, b, c):
         d = sqrt((a+b+c)/2)
-        print (d*((d-a)*(d-b)*(d-c)))
+        return (d*((d-a)*(d-b)*(d-c)))
        
 
 def circleArea(radius):
-        print (radius**2*pi)
+        return (radius**2*pi)
 
 
 def circleCircumference(radius):
-        print (radius*2*pi)
+        return (radius*2*pi)
 
 
 def rectangleArea(side, wide):
-        print (side*wide)
+        return (side*wide)
 
 
 def rectangleCircumference(side, wide):
-        print((side*2) + (wide*2))
+        return((side*2) + (wide*2))
 
 
 def sphereArea(radius):
         area = 4/3*pi*radius**3
-        print("Your result :", area)
+        return("Your result :", area)
 
 
 def sphereCicumference(radius):
         area = 4*pi*radius*2
-        print(area)
-
-
-def Find(pat, text):
-        match = re.search(pat, text)
-        if match: 
-                print (match.group())
-        else:
-                print ("No Match!")
+        return(area)
 
 
 def cosinus(v):
-        print(cos(v))
+        return(cos(v))
 
 
 def sinus(v):
-        print(sin(v))
+        return(sin(v))
 
 
 def tangent(v):
-        print(tan(v))
+        return(tan(v))
 
+# That was all the math functions
 
 def console():
         arg = raw_input (">> ")
@@ -66,10 +62,13 @@ def console():
                 print("Available commands are few still")
                 console()
         elif arg == "sin":
-                print("Sinus calculation, not implemented")
+                v = raw_print("What value do you want to take Sinus of ?: ")
+                v = int(v)
                 console()
         elif arg == "cos":
-                print ("Cosinus, not implemented")
+                v = raw_input("What value do you want Cosinus of ?: ")
+                v = int(v)
+                print(cosinus(v))
                 console()
         elif arg == "circle":
                 f = raw_input("Do you want the area inside the circle or the circumference ?: ")
@@ -100,6 +99,14 @@ perhaps also implementing something to solve equations step-by-step
 '''
 
 
+def Find(pat, text):
+        match = re.search(pat, text)
+        if match: 
+                print (match.group())
+        else:
+                print ("No Match!")
+
+
 
 def main():
         print ("I am main")
@@ -108,7 +115,7 @@ def main():
                 if arg == "":
                         print("empty")
                         console()
-                elif arg == "spherearea":
+                elif arg == "spherearea" or "sphere area":
                         print("Sphere Area, calculation")
                         a = sys.argv[2]  
                         r = float(a)
