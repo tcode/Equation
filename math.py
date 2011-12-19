@@ -2,7 +2,6 @@
 
 from math import *
 import sys
-import wxPython
 
 
 
