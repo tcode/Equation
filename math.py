@@ -72,8 +72,15 @@ def console():
                 print ("Cosinus, not implemented")
                 console()
         elif arg == "circle":
-                r = raw_input("What is your radius ?: ")
-
+                f = raw_input("Do you want the area inside the circle or the circumference ?: ")
+                if f == 'circumference':
+                        r = raw_input("What is your radius ?: ")
+                        r = int(r)
+                        print (circleCircumference(r))
+                elif f == 'area':
+                        r = raw_input("What is your radius ?: ")
+                        r = int(r)
+                        print (circleArea(r))
                 console()
         else:
                 print("not implemented, or bad command")
