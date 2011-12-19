@@ -74,6 +74,9 @@ def console():
                 console()
 
 
+
+# Regular Expressions will not be implemented soon
+
 '''
 A other nice thing to do would be to implement a regex 
 to help handling all the input in the console, and making it a nicer program to
