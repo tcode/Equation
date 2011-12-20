@@ -30,10 +30,10 @@ def rectangleCircumference(side, wide):
 
 def sphereArea(radius):
         area = 4/3*pi*radius**3
-        return("Your result :", area)
+        return(area)
 
 
-def sphereCicumference(radius):
+def sphereCircumference(radius):
         area = 4*pi*radius*2
         return(area)
 
@@ -55,7 +55,18 @@ def tangent(v):
 def console():
         arg = raw_input (">> ")
         if arg == "sphere":
-                print("Sphere, not implemented yet")
+                print("This is available calculations for Sphere")
+                f = raw_input("What function do you want to use ?: ")
+                if f == 'area':
+                        r = raw_input("What is your radius?: ")
+                        r = int(r)
+                        print(sphereArea(r))
+                        console()
+                elif f == 'circumference':        
+                        r = raw_input("What is your radius?: ")
+                        r = int(r)
+                        print(sphereCircumference(r))
+                        console()
                 console()
         elif arg == "exit":
                 sys.exit()
