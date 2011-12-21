@@ -3,6 +3,9 @@ import math
 def main():
         print("Main")
 
+def solveE():
+        se = raw_input('Please enter your equation > ')
+        
 
 
 
