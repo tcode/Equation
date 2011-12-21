@@ -5,21 +5,21 @@ def main():
 
 def solve():
         se = raw_input('Please enter your equation > ')
-        a=0
-        b=[]
-        while a < len(se):
-                b.append(se[a])
-                a=a+1
-                print(b)
 
         
         a=0
         c=[]
-        while a < len(b):
-                if b[a]=='=':
-                        c=b[:a]
-                        
+        d=[]
+        while a < len(se):
+
+                if se[a]=='=':
+                        c=se[:a]
+                        d=se[(a+1):]
+                a=a+1
+        print("The first part of your equation is: "),
         print(c)
+        print("And the second part is: "),
+        print(d)
         #To figure out where our '=' is in the list
         #This is probably gonna be very unestaestetical.
         #As I think it will rely a good deal on if statements.
