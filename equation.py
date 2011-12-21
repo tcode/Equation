@@ -22,7 +22,8 @@ def solve():
         #       workinglist=list[:a] #getting all the part of list up till a
         #
         #Here we are going to do some code to calculate what the parts of the math means
-        
+        #A first thing to do would be to replace ^ with ** so python understand what we really 
+        # mean.
         
 
 
