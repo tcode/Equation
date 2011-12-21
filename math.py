@@ -2,7 +2,6 @@
 
 from math import *
 import sys
-import re
 
 #All Math functions in this program follows in the next section
 
@@ -67,7 +66,8 @@ def console():
                         r = int(r)
                         print(sphereCircumference(r))
                         console()
-                console()
+                else:
+                        console()
         elif arg == "exit":
                 sys.exit()
         elif arg == "help":
@@ -100,6 +100,11 @@ def console():
                         r = int(r)
                         print (circleArea(r))
                 console()
+        elif arg == 'triangle':
+                a = float(raw_input('what is your first value: '))
+                b = float(raw_input('what is your second value: '))
+                c = float(raw_input('what is your third value: '))
+                print(triangleArea(a,b,c))
         else:
                 print("not implemented, or bad command")
                 console()
@@ -159,6 +164,7 @@ def main():
 hello I am a comment
 In fact I am a long comment
 '''
+
 ##########################################################################
 ###       ### ##### ###            #### ###### ###          ###  ###### ##
 ### ##### #### ### #########  ######### ###### ### ######## ### # ##### ##
