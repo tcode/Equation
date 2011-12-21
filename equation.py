@@ -1,8 +1,7 @@
 import math
 
 def main():
-        print("Main")
-        solve()
+       solve()
 
 def solve():
         se = raw_input('Please enter your equation > ')
